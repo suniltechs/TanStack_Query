@@ -1,0 +1,93 @@
+/* ------------------------------
+   GLOBAL STYLES
+--------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f6f8;
+  color: #1a1a1a;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Container for entire app */
+#root {
+  width: 100%;
+  max-width: 900px;
+}
+
+/* ------------------------------
+   HEADINGS (Loading, Error)
+--------------------------------*/
+h1 {
+  text-align: center;
+  padding: 20px;
+  color: #333;
+}
+
+/* ------------------------------
+   REPO LIST CARD
+--------------------------------*/
+
+.repo-card {
+  background: #ffffff;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e1e4e8;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.repo-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+/* UL List */
+.repo-card ul {
+  list-style: none;
+}
+
+.repo-card ul li {
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+.repo-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #24292e;
+}
+
+/* ------------------------------
+   MULTIPLE REPO WRAPPER (Test.jsx)
+--------------------------------*/
+.multi-repo-container {
+  display: grid;
+  gap: 20px;
+}
+
+/* ------------------------------
+   RESPONSIVE
+--------------------------------*/
+@media (max-width: 600px) {
+  body {
+    padding: 15px;
+  }
+
+  .repo-card {
+    padding: 15px;
+  }
+
+  .repo-title {
+    font-size: 18px;
+  }
+}
